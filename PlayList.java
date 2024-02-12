@@ -129,7 +129,7 @@ class PlayList {
        {
         this.tracks [i] = track;
        }
-       for (int j = this.getSize() ; j >= i; j--)
+       for (int j = this.getSize() ; j > i; j--)
        {
         this.tracks[j] = this.tracks[j-1];
        }
