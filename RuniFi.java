@@ -2,10 +2,13 @@
 class RuniFi {
     
     public static void main(String[] args) {
+
+
         // Creates a play list with a maximum capacity of 10 tracks
         // (small maximum capacity is good for testing purposes)
         PlayList myList = new PlayList(10);
-    
+
+
         // Creates some tracks
         Track track1 = new Track("Fernando", "ABBA", 354);
         Track track2 = new Track("Imagine", "John Lennon", 187);
@@ -22,6 +25,8 @@ class RuniFi {
 
         // Displays the list
         display("My list", myList);
+
+        System.out.println("testttt");
 
         // Displays the total duration
         System.out.println("\nTotal time duration of my list (in seconds):" + myList.totalDuration());
@@ -41,8 +46,10 @@ class RuniFi {
         myList.removeFirst();
         display("After removing the first track", myList);
 
+        System.out.println(myList.getSize());
         myList.removeLast();
         display("After removing the last track", myList);
+        System.out.println(myList.getSize());
 
         PlayList newList = new PlayList(10);
     
